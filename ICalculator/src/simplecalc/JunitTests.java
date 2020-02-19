@@ -21,9 +21,9 @@ public class JunitTests {
 	public void DivideTest() {
 		assertEquals(1, test.divide(100,100),0);
 		assertEquals(0.8F, test.divide(4,5),0);
-		assertEquals(3, test.divide(3,1),0);
+		assertEquals(0.5, test.divide(1,2),0);
 		try {
-			test.divide(2, 0);
+			test.divide(2,0);
 		}catch (RuntimeException r) {
 			System.out.println(r.toString());
 		}
