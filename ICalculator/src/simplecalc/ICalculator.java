@@ -14,6 +14,7 @@ public interface ICalculator {
 	* @param y second number
 	* @return the division result
 	*/
+	
 	float divide(int x, int y) throws RuntimeException;
 	
 }
