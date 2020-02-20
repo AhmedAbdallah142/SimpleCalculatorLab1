@@ -23,8 +23,8 @@ public class JunitTests {
 		assertEquals(1, test.divide(100,100),0);
 		assertEquals(0.8F, test.divide(4,5),0);
 		assertEquals(0.5, test.divide(1,2),0);
-			test.divide(2,0);
-		}catch (RuntimeException r) {
+		assertEquals(0,test.divide(2,0),0);
+		}catch (Exception r) {
 			System.out.println(r.toString());
 		}
 	}
