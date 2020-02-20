@@ -11,7 +11,7 @@ public class JunitTests {
 	@Test
 	public void AddTest() {
 		
-		assertEquals(110, test.add(10,100));
+	    assertEquals(110, test.add(10,100));
 	    assertEquals(10, test.add(0, 10));
 	    assertEquals(10, test.add(10,0));
 	    assertEquals(3, test.add(1,2));
